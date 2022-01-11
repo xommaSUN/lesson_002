@@ -58,7 +58,27 @@ table_cost = table_quantity*table_price+table_quantity1*table_price1
 
 print('Стол -', table_quantity+table_quantity1, 'шт, стоимость', table_cost, 'руб')
 
+#Стоимость диванов
 
+sofa_quantity = store[goods['Диван']][0]['quantity']
+sofa_quantity1 = store[goods['Диван']][1]['quantity']
+sofa_price = store[goods['Диван']][0]['price']
+sofa_price1 = store[goods['Диван']][1]['price']
+sofa_cost = sofa_quantity*table_price+sofa_quantity1*sofa_price1
+
+print('Диван -', sofa_quantity+sofa_quantity1, 'шт, стоимость', sofa_cost, 'руб')
+
+#Стоимость стульев
+
+chair_quantity = store[goods['Стул']][0]['quantity']
+chair_quantity1 = store[goods['Стул']][1]['quantity']
+chair_quantity2 = store[goods['Стул']][2]['quantity']
+chair_price = store[goods['Стул']][0]['price']
+chair_price1 = store[goods['Стул']][1]['price']
+chair_price2 = store[goods['Стул']][2]['price']
+chair_cost = chair_quantity*chair_price+chair_quantity1*chair_price1+chair_quantity2*chair_price2
+
+print('Стул -', chair_quantity+chair_quantity1+chair_quantity2, 'шт, стоимость', chair_cost, 'руб')
 
 
 
